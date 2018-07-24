@@ -1,26 +1,28 @@
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min";
-@import "../../node_modules/font-awesome/css/font-awesome";
 
+$a-color : #529ecc;
+$nav-color : #36465d;
+$search-color:#2d3a4e;
 
 body{
     background-color:#d2dae6;
     padding:0, 60px;
 }
 
-.navbar-light *{
-    color:#fff;
+a{
+    color:$a-color;
 }
 
 .header__nav{
     padding:17px 60px;
-    background-color: #36465d;
+    background-color: $nav-color;
     color:#fff;
 }
 
 .searchform{
     height:33px;
     width:314px;
-    background-color:#2d3a4e;
+    background-color:$search-color;
     border:none;
 }
 
@@ -108,6 +110,8 @@ body{
 .username,.notes{
     color:#8f8f8f;
     font-weight:bold;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .panel__text{
@@ -122,11 +126,58 @@ body{
     margin-left:30px;
 }
 
+.panel__option:first-child{
+    margin-left:0;
+}
+
 .main__panel{
     /* width: 608px; */
     border-radius: 1px;
     background-color: #fff;
     padding: 15px 20px;
+}
+
+.side__panel{
+    border-radius: 1px;
+    background-color: #fff;
+    padding:20px 0;
+}
+
+.radar__img{
+    padding:20px 30px 15px 30px;
+    display:block;
+    max-width:100%;
+}
+
+.radar__bottom{
+    padding:0 30px 25px 30px;
+}
+
+.explore{
+    display:inline-block;
+    padding-top:20px;
+    padding-left:30px;
+    font-weight:bold;
+}
+.recommended__blog{
+    padding:20px 30px;
+}
+
+.recommended__blogs__text{
+    font-weight:bold;
+    color:#565656;
+    font-size:13px;
+    padding:30px;
+}
+
+.recommended__blogs__separator{
+    margin:0;
+}
+
+.recommended__blog__name{
+    display: block;
+    line-height: 12px;
+    font-size: 12px;
 }
 
 .main_panel--space-evenly{
@@ -155,8 +206,8 @@ body{
     display:block;
 }
 
-.side__panel{
-
+.plusbox{
+    padding:10px 0;
 }
 
 .lg__profile{
@@ -169,5 +220,6 @@ body{
     width:35px;
     height:35px;
     border-radius: 1px;
+    margin-right:15px;
 }
 
