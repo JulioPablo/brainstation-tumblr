@@ -3,12 +3,16 @@ let gulp = require('gulp')
 let gutil =  require('gulp-util')
 let sass = require('gulp-sass')
 let webserver = require('gulp-webserver');
+let gulpStylelint = require('gulp-stylelint');
 let path = require('path')
 
 /* Styles task */
-gulp.task('styles', () => {
+gulp.task('styles',['lint-css'], () => {
   return gulp.src('src/sass/main.scss')
-    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sass({
+      includePaths: [path.join(__dirname, '/node_modules/bootstrap/scss')],
+      outputStyle: 'compressed'
+    }))
     .pipe(gulp.dest('build/css/'));
 })
 
@@ -23,7 +27,7 @@ gulp.task('img', () => {
   })
 
 gulp.task('watch', () => {
-    gulp.watch('src/scss/**/*.scss', ['styles'],cb => cb)
+    gulp.watch('src/sass/**/*.scss', ['styles'],cb => cb)
     gulp.watch('src/**/*.html', ['html'],cb => cb)
 })
 gulp.task('server', () => {
@@ -33,6 +37,16 @@ gulp.task('server', () => {
       open: true
     }))
 })
+
+gulp.task('lint-css', () => {
+
+    gulp.src('src/sass/main.scss')
+    .pipe(gulpStylelint({
+      reporters: [
+        {formatter: 'string', console: true}
+      ]
+    }));
+});
 
 gulp.task('watch-server', ['server','watch'])
 

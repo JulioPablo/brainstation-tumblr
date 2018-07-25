@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "styles":"gulp styles", 
+    "styles": "gulp styles",
     "build": "gulp build",
     "start": "gulp watch-server"
   },
@@ -18,9 +18,27 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
+    "gulp-stylelint": "^7.0.0",
     "gulp-util": "^3.0.8",
     "gulp-webserver": "^0.9.1",
     "http-server": "^0.11.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "stylelint": "^9.3.0"
+  },
+  "stylelint":{
+    "rules": {
+      "block-no-empty": null,
+      "color-no-invalid-hex": true,
+      "comment-empty-line-before": [ "always", {
+        "ignore": ["stylelint-commands", "after-comment"]
+      } ],
+      "declaration-colon-space-after": "always",
+      "max-empty-lines": 2,
+      "rule-empty-line-before": [ "always", {
+        "except": ["first-nested"],
+        "ignore": ["after-comment"]
+      } ],
+      "unit-whitelist": ["em", "rem", "%", "s","px"]
+    }
   }
 }
