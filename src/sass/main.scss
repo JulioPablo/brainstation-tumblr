@@ -199,6 +199,7 @@ a{
 .main__panel__nav--space-evenly{
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
 }
 
 .main__panel__iconcontainer{
@@ -214,32 +215,59 @@ a{
     display: block;
 }
 
-.icon__text{
-    background-image: url($img-path + "text.png");
+.sprite{
+    background-image: url($img-path + "spritesheet.png");
+    background-repeat: no-repeat;
 }
 
-.icon__photo{
-    background-image: url($img-path + "photo.png");
+.sprite__text{
+    background-position-x: -5px;
+    background-position-y: -73px;
+    width: 26px;
+    height: 16px;
 }
 
-.icon__quote{
-    background-image: url($img-path + "quote.png");
+.sprite__camera{
+    background-position-x: -75px;
+    background-position-y: -5px;
+    width: 40px;
+    height: 25px;
 }
 
-.icon__link{
-    background-image: url($img-path + "link.png");
+.sprite__audio {
+    background-position-x: 2px;
+    background-position-y: -5px;
+    width: 35px;
+    height: 29px;
 }
 
-.icon__chat{
-    background-image: url($img-path + "chat.png");
+.sprite__link{
+    background-position-x: -40px;
+    background-position-y: -40px;
+    width: 30px;
+    height: 29px;
 }
 
-.icon__audio{
-    background-image: url($img-path + "Audio.png");
+.sprite__chat{
+    background-position-x: -43px;
+    background-position-y: -5px;
+    width: 27px;
+    height: 27px;
 }
 
-.icon__video{
-    background-image: url($img-path + "video.png");
+.sprite__video{
+    background-position-x: -80px;
+    background-position-y: -73px;
+    width: 31px;
+    height: 22px;
+}
+
+
+.sprite__quote{
+    background-position-x: -72px;
+    background-position-y: -40px;
+    width: 40px;
+    height: 23px;
 }
 
 .main__panel__icon__undertext{
