@@ -3,6 +3,7 @@
 $a-color: #529ecc;
 $nav-color: #36465d;
 $search-color: #2d3a4e;
+$img-path : "../img/";
 
 body{
     background-color: #d2dae6;
@@ -10,6 +11,75 @@ body{
 
 a{
     color: $a-color;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-link{
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 15px;
+    height: 30px;
+    width: 30px;
+}
+
+.nav__weirdSquare{
+    display: inline-block;
+    background-color: #529ecc;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    padding: 3px 10px;
+    background-image: url($img-path + "pen.png");
+
+}
+
+.nav__home{
+    background-image: url($img-path + "home_active.png");
+}
+
+.nav__compass{
+    background-image: url($img-path + "compass_inactive.png");
+}
+
+.nav__compass:hover{
+    background-image: url($img-path + "compass_active.png");
+}
+
+.nav__mail{
+    background-image: url($img-path + "mail_inactive.png");
+}
+
+.nav__mail:hover{
+    background-image: url($img-path + "mail_active.png");
+}
+
+.nav__chat{
+    background-image: url($img-path + "chat_inactive.png");
+}
+
+.nav__chat:hover{
+    background-image: url($img-path + "chat_active.png");
+}
+
+.nav__bolt{
+    background-image: url($img-path + "bolt_inactive.png");
+}
+
+.nav__bolt:hover{
+    background-image: url($img-path + "bolt_active.png");
+}
+
+.nav__person{
+    background-image: url($img-path + "person_inactive.png");
+}
+
+.nav__person:hover{
+    background-image: url($img-path + "person_active.png");
 }
 
 .header__nav{
@@ -48,31 +118,6 @@ a{
 
 .header__nav__logo{
     margin-right: 60px;
-}
-
-.nav-item:hover .nav__img--active{
-    display: inline;
-}
-
-.nav-item:hover .nav__img--inactive{
-    display: none;
-}
-
-.nav__img--active{
-    display: none;
-}
-
-.nav-item.active .nav__img--active{
-    display: inline;
-}
-
-.nav__weirdSquare{
-    display: inline-block;
-    background-color: #529ecc;
-    border-radius: 5px;
-    width: 35px;
-    height: 35px;
-    padding: 3px 10px;
 }
 
 .--mb{
@@ -123,7 +168,37 @@ a{
 
 .panel__option{
     margin-left: 30px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 30px;
+    width: 30px;
 }
+
+.option__close{
+    background-image: url($img-path + "xClose.png");
+}
+
+.option__compass{
+    background-image: url($img-path + "post_compass.png");
+}
+
+.option__sidearrow{
+    background-image: url($img-path + "sideArrow.png");
+}
+
+.option__turn{
+    background-image: url($img-path + "turn.png");
+}
+
+.option__greychat{
+    background-image: url($img-path + "greyChat.png");
+}
+
+.option__heart{
+    background-image: url($img-path + "heart.png");
+}
+
 
 .panel__option:first-child{
     margin-left: 0;
@@ -182,7 +257,7 @@ a{
     font-size: 12px;
 }
 
-.main_panel--space-evenly{
+.main__panel__nav--space-evenly{
     display: flex;
     justify-content: space-evenly;
 }
@@ -194,6 +269,38 @@ a{
 
 .main__panel__icon{
     height: 30px;
+    width: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.icon__text{
+    background-image: url($img-path + "text.png");
+}
+
+.icon__photo{
+    background-image: url($img-path + "photo.png");
+}
+
+.icon__quote{
+    background-image: url($img-path + "quote.png");
+}
+
+.icon__link{
+    background-image: url($img-path + "link.png");
+}
+
+.icon__chat{
+    background-image: url($img-path + "chat.png");
+}
+
+.icon__audio{
+    background-image: url($img-path + "Audio.png");
+}
+
+.icon__video{
+    background-image: url($img-path + "video.png");
 }
 
 .main__panel__icon__undertext{
@@ -210,6 +317,12 @@ a{
 
 .plusbox{
     padding: 10px 0;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url($img-path + "plusBox.png");
+    height: 30px;
+    width: 30px;
 }
 
 .lg__profile{

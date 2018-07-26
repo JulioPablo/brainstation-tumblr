@@ -23,45 +23,25 @@
               </form>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">
-                  <img class="nav__img--active" src="img/home_active.png" alt="">
-                </a>
+                <a class="nav-link nav__home" href="#"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img class="nav__img--active" src="img/compass_active.png" alt="">
-                  <img class="nav__img--inactive" src="img/compass_inactive.png" alt="">
-                </a>
+                <a class="nav-link nav__compass" href="#"></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img class="nav__img--active" src="img/mail_active.png" alt="">
-                    <img class="nav__img--inactive" src="img/mail_inactive.png" alt="">
-                  </a>
+                  <a class="nav-link nav__mail" href="#"></a>
                 </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img class="nav__img--active" src="img/chat_active.png" alt="">
-                    <img class="nav__img--inactive" src="img/chat_inactive.png" alt="">
-                  </a>
+                  <a class="nav-link nav__chat" href="#"></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img class="nav__img--active" src="img/bolt_active.png" alt="">
-                    <img class="nav__img--inactive" src="img/bolt_inactive.png" alt="">
-                  </a>
+                  <a class="nav-link nav__bolt" href="#"></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <img class="nav__img--active" src="img/person_active.png" alt="">
-                    <img class="nav__img--inactive" src="img/person_inactive.png" alt="">
-                  </a>
+                  <a class="nav-link nav__person" href="#"></a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="#">
-                    <span class="nav__weirdSquare">
-                        <img src="img/pen.png" alt="">
-                    </span>
+                  <a class="nav-link nav__weirdSquare" href="#">
                   </a>
               </li>
             </ul>
@@ -77,49 +57,37 @@
               <img class="lg__profile" src="img/pPhotoRetroGirl.png" alt="">
             </div>
             <div class="col-lg-10">
-              <div class="main__panel main_panel--space-evenly panel--mb">
-                <div class="main__panel__iconcontainer">
-                  <div class="main__panel__icon">
-                    <img  src="img/text.png" alt="">
+              <div class="main__panel panel--mb">
+                <nav class="main__panel__nav--space-evenly" >
+                    <div class="main__panel__iconcontainer">
+                      <a href="#" class="main__panel__icon icon__text"></a>
+                      <span class="main__panel__icon__undertext">Text</span>
+                    </div>
+                    <div class="main__panel__iconcontainer">
+                      <a href="#" class="main__panel__icon icon__photo"></a>
+                      <span class="main__panel__icon__undertext">Photo</span>
+                    </div>
+                    <div class="main__panel__iconcontainer">
+                      <a href="#" class="main__panel__icon icon__quote"></a>
+                      <span class="main__panel__icon__undertext">Quote</span>
+                    </div>
+                    <div class="main__panel__iconcontainer">
+                      <a href="#" class="main__panel__icon icon__link"></a>
+                      <span class="main__panel__icon__undertext">Link</span>
+                    </div>
+                    <div class="main__panel__iconcontainer">
+                      <a href="#" class="main__panel__icon icon__chat"></a>
+                      <span class="main__panel__icon__undertext">Chat</span>
+                    </div>
+                    <div class="main__panel__iconcontainer">
+                      <a href="#" class="main__panel__icon icon__audio"></a>
+                      <span class="main__panel__icon__undertext">Audio</span>
                   </div>
-                  <span class="main__panel__icon__undertext">Text</span>
-                </div>
-                <div class="main__panel__iconcontainer">
-                  <div class="main__panel__icon">
-                    <img  src="img/photo.png" alt="">
+                  <div class="main__panel__iconcontainer">
+                      <a href="#" class="main__panel__icon icon__video"></a>
+                      <span class="main__panel__icon__undertext">Video</span>
                   </div>
-                  <span class="main__panel__icon__undertext">Photo</span>
-                </div>
-                <div class="main__panel__iconcontainer">
-                  <div class="main__panel__icon">
-                      <img  src="img/quote.png" alt="">
-                  </div>
-                  <span class="main__panel__icon__undertext">Quote</span>
-                </div>
-                <div class="main__panel__iconcontainer">
-                  <div class="main__panel__icon">
-                      <img  src="img/link.png" alt="">
-                  </div>
-                  <span class="main__panel__icon__undertext">Link</span>
-               </div>
-                <div class="main__panel__iconcontainer">
-                  <div class="main__panel__icon">
-                      <img  src="img/chat.png" alt="">
-                  </div>
-                  <span class="main__panel__icon__undertext">Chat</span>
-                </div>
-                <div class="main__panel__iconcontainer">
-                  <div class="main__panel__icon">
-                    <img  src="img/Audio.png" alt="">
-                  </div>
-                  <span class="main__panel__icon__undertext">Audio</span>
-               </div>
-               <div class="main__panel__iconcontainer">
-                  <div class="main__panel__icon">
-                      <img  src="img/video.png" alt="">
-                  </div>
-                  <span class="main__panel__icon__undertext">Video</span>
-               </div>
+               </nav>
               </div>
             </div>
           </div>
@@ -128,14 +96,14 @@
               <img class="lg__profile" src="img/pPhotoGuy.png" alt="">
             </div>
             <div class="col-lg-10">
-              <div class="main_panel panel--mb">
+              <article class="main_panel panel--mb">
                   <div class="panel__header">
                     <span class="panel__text">Here's a blog:</span> 
                     <span class="username">bob-strauss</span>
                     <a href="#" class="follow">Follow</a>
                     <div class="float-right">
-                        <img class="panel__option" src="img/xClose.png" alt="">
-                        <img class="panel__option"src="img/post_compass.png" alt="">
+                        <a href="#" class="panel__option option__close"></a>
+                        <a href="#" class="panel__option option__compass"></a>
                     </div>
                   </div>
                   <img src="img/mainPhoto.png" alt="" class="image__post">
@@ -143,77 +111,79 @@
                     <span class="tags">#forest #nature #darkness #blackforest</span>
                     <span class="notes">234,450 notes</span>
                     <div class="float-right">
-                        <img class="panel__option" src="img/sideArrow.png" alt="">
-                        <img class="panel__option"src="img/turn.png" alt="">
-                        <img class="panel__option" src="img/greyChat.png" alt="">
-                        <img class="panel__option"src="img/heart.png" alt="">
+                        <a href="#" class="panel__option option__sidearrow"></a>
+                        <a href="#" class="panel__option option__turn"></a>
+                        <a href="#" class="panel__option option__greychat"></a>
+                        <a href="#" class="panel__option option__heart"></a>
                     </div>
                   </div>
-              </div>
+              </article>
             </div>
           </div>
         </div>
         <div class="col-lg-3 offset-lg-1">
-          <div class="side__panel panel--mb">
-            <span class="recommended__blogs__text">RECOMMENDED BLOGS</span>
-            <div class="recommended__blog">
-                <img class="sm__profile float-left" src="img/pPhotoR1.png" alt="">
-                <img class="float-right plusbox"src="img/plusBox.png" alt="">
-                <div>
-                  <span class="username">username</span>
-                  <span class="recommended__blog__name" >Tumblr blog name</span>
-                </div>
-            </div>
-            <hr class="recommended__blogs__separator">
-            <div class="recommended__blog">
-                <img class="sm__profile float-left" src="img/pPhotoR2.png" alt="">
-                <img class="float-right plusbox"src="img/plusBox.png" alt="">
-                <div>
-                  <span class="username">username</span>
-                  <span class="recommended__blog__name" >Tumblr blog name</span>
-                </div>
-            </div>
-            <hr class="recommended__blogs__separator">
-            <div class="recommended__blog">
-                <img class="sm__profile float-left" src="img/pPhotoR3.png" alt="">
-                <img class="float-right plusbox"src="img/plusBox.png" alt="">
-                <div>
-                  <span class="username">username</span>
-                  <span class="recommended__blog__name" >Tumblr blog name</span>
-                </div>
-            </div>
-            <hr class="recommended__blogs__separator">
-            <div class="recommended__blog">
-                <img class="sm__profile float-left" src="img/pPhotoR4.png" alt="">
-                <img class="float-right plusbox"src="img/plusBox.png" alt="">
-                <div>
-                  <span class="username">username</span>
-                  <span class="recommended__blog__name" >Tumblr blog name</span>
-                </div>
-            </div>
-            <hr class="recommended__blogs__separator">
-            <a href="#" class="explore">EXPLORE TUMBLR</a>
-          </div>
-          <div class="side__panel">
-              <span class="recommended__blogs__text">RADAR</span>
+          <aside>
+            <div class="side__panel panel--mb">
+              <span class="recommended__blogs__text">RECOMMENDED BLOGS</span>
               <div class="recommended__blog">
-                  <img class="sm__profile float-left" src="img/pPhotoRadarGirl.png" alt="">
-                  <img class="float-right plusbox"src="img/plusBox.png" alt="">
+                  <img class="sm__profile float-left" src="img/pPhotoR1.png" alt="">
+                  <a href="#" class="float-right plusbox"></a>
                   <div>
                     <span class="username">username</span>
                     <span class="recommended__blog__name" >Tumblr blog name</span>
                   </div>
               </div>
-              <img class="radar__img" src="img/radarPhoto.png" alt="">
-              
-              <div class="radar__bottom">
-                <span class="notes">1,320 notes</span>
-                <div class="float-right">
-                    <img class="panel__option"src="img/turn.png" alt="">
-                    <img class="panel__option"src="img/heart.png" alt="">
-                </div>
+              <hr class="recommended__blogs__separator">
+              <div class="recommended__blog">
+                  <img class="sm__profile float-left" src="img/pPhotoR2.png" alt="">
+                  <a href="#" class="float-right plusbox"></a>
+                  <div>
+                    <span class="username">username</span>
+                    <span class="recommended__blog__name" >Tumblr blog name</span>
+                  </div>
               </div>
-          </div>
+              <hr class="recommended__blogs__separator">
+              <div class="recommended__blog">
+                  <img class="sm__profile float-left" src="img/pPhotoR3.png" alt="">
+                  <a href="#" class="float-right plusbox"></a>
+                  <div>
+                    <span class="username">username</span>
+                    <span class="recommended__blog__name" >Tumblr blog name</span>
+                  </div>
+              </div>
+              <hr class="recommended__blogs__separator">
+              <div class="recommended__blog">
+                  <img class="sm__profile float-left" src="img/pPhotoR4.png" alt="">
+                  <a href="#" class="float-right plusbox"></a>
+                  <div>
+                    <span class="username">username</span>
+                    <span class="recommended__blog__name" >Tumblr blog name</span>
+                  </div>
+              </div>
+              <hr class="recommended__blogs__separator">
+              <a href="#" class="explore">EXPLORE TUMBLR</a>
+            </div>
+            <div class="side__panel">
+                <span class="recommended__blogs__text">RADAR</span>
+                <div class="recommended__blog">
+                    <img class="sm__profile float-left" src="img/pPhotoRadarGirl.png" alt="">
+                    <a href="#" class="float-right plusbox"></a>
+                    <div>
+                      <span class="username">username</span>
+                      <span class="recommended__blog__name" >Tumblr blog name</span>
+                    </div>
+                </div>
+                <img class="radar__img" src="img/radarPhoto.png" alt="">
+                
+                <div class="radar__bottom">
+                  <span class="notes">1,320 notes</span>
+                  <div class="float-right">
+                      <a href="#" class="panel__option option__turn"></a>
+                      <a href="#" class="panel__option option__heart"></a>
+                  </div>
+                </div>
+            </div>
+        </aside>
         </div>
       </div>
     </div>
