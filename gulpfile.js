@@ -7,13 +7,21 @@ let gulpStylelint = require('gulp-stylelint');
 let path = require('path')
 
 /* Styles task */
-gulp.task('styles',['lint-css'], () => {
+gulp.task('styles',['lint-css','webfonts'], () => {
   return gulp.src('src/sass/main.scss')
     .pipe(sass({
-      includePaths: [path.join(__dirname, '/node_modules/bootstrap/scss')],
+      includePaths: [
+        path.join(__dirname, '/node_modules/bootstrap/scss'),
+        path.join(__dirname, '/node_modules/font-awesome/scss')
+      ],
       outputStyle: 'compressed'
     }))
     .pipe(gulp.dest('build/css/'));
+})
+
+gulp.task('webfonts', () => {
+  return gulp.src('node_modules/font-awesome/fonts/**/*')
+  .pipe(gulp.dest('build/fonts'));
 })
 
 gulp.task('html', () => {

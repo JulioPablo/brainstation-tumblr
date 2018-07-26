@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 $a-color: #529ecc;
 $nav-color: #36465d;
@@ -20,66 +21,30 @@ a{
 }
 
 .nav-link{
-    background-repeat: no-repeat;
-    background-position: center;
+    font-size: 20px;
     margin-left: 15px;
-    height: 30px;
-    width: 30px;
+
+    .fa{
+        color: #6A7684;
+    }
+
+    .fa:hover{
+        color: #FFF;
+    }
+}
+
+.nav-item.active{
+    .fa{
+        color: #FFF;
+    }
 }
 
 .nav__weirdSquare{
     display: inline-block;
     background-color: #529ecc;
     border-radius: 5px;
-    width: 35px;
-    height: 35px;
     padding: 3px 10px;
-    background-image: url($img-path + "pen.png");
 
-}
-
-.nav__home{
-    background-image: url($img-path + "home_active.png");
-}
-
-.nav__compass{
-    background-image: url($img-path + "compass_inactive.png");
-}
-
-.nav__compass:hover{
-    background-image: url($img-path + "compass_active.png");
-}
-
-.nav__mail{
-    background-image: url($img-path + "mail_inactive.png");
-}
-
-.nav__mail:hover{
-    background-image: url($img-path + "mail_active.png");
-}
-
-.nav__chat{
-    background-image: url($img-path + "chat_inactive.png");
-}
-
-.nav__chat:hover{
-    background-image: url($img-path + "chat_active.png");
-}
-
-.nav__bolt{
-    background-image: url($img-path + "bolt_inactive.png");
-}
-
-.nav__bolt:hover{
-    background-image: url($img-path + "bolt_active.png");
-}
-
-.nav__person{
-    background-image: url($img-path + "person_inactive.png");
-}
-
-.nav__person:hover{
-    background-image: url($img-path + "person_active.png");
 }
 
 .header__nav{
@@ -169,36 +134,10 @@ a{
 .panel__option{
     margin-left: 30px;
     display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 30px;
-    width: 30px;
+    color: #6A7684;
+    font-size: 20px;
+    
 }
-
-.option__close{
-    background-image: url($img-path + "xClose.png");
-}
-
-.option__compass{
-    background-image: url($img-path + "post_compass.png");
-}
-
-.option__sidearrow{
-    background-image: url($img-path + "sideArrow.png");
-}
-
-.option__turn{
-    background-image: url($img-path + "turn.png");
-}
-
-.option__greychat{
-    background-image: url($img-path + "greyChat.png");
-}
-
-.option__heart{
-    background-image: url($img-path + "heart.png");
-}
-
 
 .panel__option:first-child{
     margin-left: 0;
@@ -318,11 +257,9 @@ a{
 .plusbox{
     padding: 10px 0;
     display: inline-block;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url($img-path + "plusBox.png");
-    height: 30px;
-    width: 30px;
+    color: #6A7684;
+    font-size: 25px;
+    line-height: 25px;
 }
 
 .lg__profile{
