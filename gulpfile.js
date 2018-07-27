@@ -12,7 +12,7 @@ gulp.task('styles',['lint-css','webfonts'], () => {
     .pipe(sass({
       includePaths: [
         path.join(__dirname, '/node_modules/bootstrap/scss'),
-        path.join(__dirname, '/node_modules/font-awesome/scss')
+        path.join(__dirname, '/node_modules/@fortawesome/fontawesome-free/scss')
       ],
       outputStyle: 'compressed'
     }))
@@ -20,8 +20,8 @@ gulp.task('styles',['lint-css','webfonts'], () => {
 })
 
 gulp.task('webfonts', () => {
-  return gulp.src('node_modules/font-awesome/fonts/**/*')
-  .pipe(gulp.dest('build/fonts'));
+  return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
+  .pipe(gulp.dest('build/webfonts'));
 })
 
 gulp.task('html', () => {
@@ -56,10 +56,10 @@ gulp.task('lint-css', () => {
     }));
 });
 
-gulp.task('watch-server', ['server','watch'])
-
 gulp.task('build', [
   'html',
   'img',
   'styles'
-], cb => cb)
+], cb => cb);
+
+gulp.task('watch-server', ['build','server','watch']);
