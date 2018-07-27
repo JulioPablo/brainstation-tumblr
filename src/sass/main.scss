@@ -136,11 +136,8 @@ a{
     display: inline-block;
     color: #6A7684;
     font-size: 20px;
-    
-}
-
-.panel__option:first-child{
-    margin-left: 0;
+    background: none;
+    border: none;
 }
 
 .main__panel{
@@ -170,7 +167,6 @@ a{
 
 .explore{
     display: inline-block;
-    padding-top: 20px;
     padding-left: 30px;
     font-weight: bold;
 }
@@ -196,10 +192,15 @@ a{
     font-size: 12px;
 }
 
-.main__panel__nav--space-evenly{
+.list--space-evenly{
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
+}
+
+.list--unstyled{
+    padding: 0;
+    list-style: none;
 }
 
 .main__panel__iconcontainer{
