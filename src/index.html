@@ -186,7 +186,7 @@
                   </div>
                 </section>
                 <section id="text-modal-content" class="modal__content">
-                  <form class="text-post-form">
+                  <form name="text-post" method="POST" netlify class="text-post-form" action="/">
                     <input class="text-post-form__field" type="text" placeholder="Title" name="title">
                     <textarea class="text-post-form__field text-post-form__field--content" name="" id="" cols="30" rows="10" placeholder="Your text here" name="content"></textarea>
                     <input class="text-post-form__field text-post-form--tags" type="text" placeholder="#tags" name="tags">
@@ -217,7 +217,7 @@
                 <footer class="modal__footer">
                   <button id="close-modal-btn" class="modal__close-btn">CLOSE</button>
                   <i class="fab fa-twitter ml-auto" aria-hidden="true"></i>
-                  <button class="modal__post-btn">POST <i class="fas fa-angle-down" aria-hidden="true"></i></button>
+                  <button type="submit" class="modal__post-btn">POST <i class="fas fa-angle-down" aria-hidden="true"></i></button>
                 </footer>
               </div>
           </div>
