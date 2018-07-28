@@ -20,14 +20,16 @@ closeModalBtn.addEventListener('click', (e)=>{
 });
 
 postPhoto.addEventListener('click', (e)=>{
+    e.preventDefault();
     modal.style.display = "block";
     photoContent.style.display = "flex";
 });
 
-/*postText.addEventListener('click', (e)=>{
+postText.addEventListener('click', (e)=>{
+    e.preventDefault();
     modal.style.display = "block";
     textContent.style.display = "flex";
-});*/
+});
 
 function get(url, callback){
     fetch(url)

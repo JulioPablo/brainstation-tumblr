@@ -25,7 +25,7 @@ gulp.task('webfonts', () => {
 })
 
 gulp.task('html', () => {
-  return gulp.src('src/**/*.html')
+  return gulp.src('src/**/*.{html,ico}')
     .pipe(gulp.dest('build/'))
 })
 

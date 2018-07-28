@@ -76,3 +76,51 @@
     display: block;
 
 }
+
+.text-post-form{
+    width: 100%;
+    padding: 0 30px;
+}
+
+.text-post-form__field{
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 15px 0 0 0;
+    margin: 0;
+    color: #b2b2b2;
+    outline: none;
+}
+
+.text-post-form__field--content{
+    resize: none;
+    max-height: 100px;
+}
+
+.text-post-form--tags{
+    display: inline-block;
+    width: 50%;
+    margin-left: auto;
+}
+
+.text-post-form__upload-options{
+    display: inline-block;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: right;
+    list-style: none;
+    width: 49%;
+    margin-left: auto;
+}
+
+.text-post-form__upload-option{
+    padding: 0 15px;
+    display: inline-block;
+}
+
+.text-post-form__upload-option__button{
+    border: none;
+    color: #5a5858;
+    background-color: transparent;
+    padding: 0;
+}
