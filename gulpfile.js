@@ -53,6 +53,12 @@ gulp.task('server', () => {
     }))
 })
 
+gulp.task('mock-api', () => {
+  return gulp.src('src/api/**/*.*')
+    .pipe(gulp.dest('build/api'))
+})
+
+
 gulp.task('lint-css', () => {
 
     gulp.src('src/sass/**/*.scss')
@@ -67,7 +73,8 @@ gulp.task('build', [
   'html',
   'js',
   'img',
-  'styles'
+  'styles',
+  'mock-api'
 ], cb => cb);
 
 gulp.task('watch-server', ['build','server','watch']);
