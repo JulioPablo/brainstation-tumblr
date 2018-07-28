@@ -1,0 +1,30 @@
+[
+    {
+        "author": {
+            "name": "Jatau Oyibo",
+            "avatar": "https://res.cloudinary.com/julio/image/upload/v1532754479/brainstation-tumblr/pPhotoR1.png"
+        },
+        "blogName": "Flea Market"
+    },
+    {
+        "author": {
+            "name": "Efe Kahina",
+            "avatar": "https://res.cloudinary.com/julio/image/upload/v1532754478/brainstation-tumblr/pPhotoR3.png"
+        },
+        "blogName": "In a Pickle"
+    },
+    {
+        "author": {
+            "name": "Ifa Alaba",
+            "avatar": "https://res.cloudinary.com/julio/image/upload/v1532754478/brainstation-tumblr/pPhotoR2.png"
+        },
+        "blogName": "Cry Over Spilt Milk"
+    },
+    {
+        "author": {
+            "name": "Tariro Obi",
+            "avatar": "https://res.cloudinary.com/julio/image/upload/v1532754478/brainstation-tumblr/pPhotoR4.png"
+        },
+        "blogName": "Mouth-watering"
+    }
+]

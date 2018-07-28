@@ -124,114 +124,11 @@
               </div>
             </div>
           </section>
-          <article class="row blog-post">
-            <div class="col-lg-2">
-              <img class="profile-img-lg" src="img/pPhotoGuy.png" alt="">
-            </div>
-            <div class="col-lg-10">
-              <div class="panel--mb">
-                <header class="blog-post__header">
-                  <span class="blog-post__text">Here's a blog:</span>
-                  <span class="blog-post__author">bob-strauss</span>
-                  <a href="#" class="follow">Follow</a>
-                  <div class="float-right">
-                    <button class="blog-post__menu-list__option">
-                      <i class="fas fa-times" aria-hidden="true"></i>
-                    </button>
-                    <button class="blog-post__menu-list__option">
-                      <i class="far fa-compass" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </header>
-                <section>
-                  <img src="img/mainPhoto.png" alt="" class="blog-post__image-content">
-                </section>
-                <footer class="blog-post__footer">
-                  <span class="blog-post__tags">#forest #nature #darkness #blackforest</span>
-                  <span class="blog-post__notes">234,450 notes</span>
-                  <ul class="float-right blog-post__menu-list">
-                    <li>
-                      <button class="blog-post__menu-list__option">
-                        <i class="far fa-paper-plane" aria-hidden="true"></i>
-                      </button>
-                    </li>
-                    <li>
-                      <button class="blog-post__menu-list__option">
-                        <i class="far fa-comment" aria-hidden="true"></i>
-                      </button>
-                    </li>
-                    <li>
-                      <button class="blog-post__menu-list__option">
-                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
-                      </button>
-                    </li>
-                    <li>
-                      <button class="blog-post__menu-list__option">
-                        <i class="far fa-heart" aria-hidden="true"></i>
-                      </button>
-                    </li>
-                  </ul>
-                </footer>
-              </div>
-            </div>
-          </article>
         </main>
         <aside class="col-lg-3 offset-lg-1">
           <section class="side-panel panel--mb">
             <h3 class="recommended__blogs__text">RECOMMENDED BLOGS</h3>
             <ul class="recommended__blogs">
-              <li>
-                  <div class="recommended__blog">
-                    <img class="profile-img-sm float-left" src="img/pPhotoR1.png" alt="">
-                    <a href="#" class="float-right plusbox">
-                      <i class="far fa-plus-square" aria-hidden="true"></i>
-                    </a>
-                    <div>
-                      <span class="blog-post__author">username</span>
-                      <span class="recommended__blog__name">Tumblr blog name</span>
-                    </div>
-                  </div>
-                  <hr class="recommended__blogs__separator">
-              </li>
-              <li>
-                  <div class="recommended__blog">
-                      <img class="profile-img-sm float-left" src="img/pPhotoR2.png" alt="">
-                      <a href="#" class="float-right plusbox">
-                        <i class="far fa-plus-square" aria-hidden="true"></i>
-                      </a>
-                      <div>
-                        <span class="blog-post__author">username</span>
-                        <span class="recommended__blog__name">Tumblr blog name</span>
-                      </div>
-                    </div>
-                    <hr class="recommended__blogs__separator">
-              </li>
-              <li>
-                  <div class="recommended__blog">
-                      <img class="profile-img-sm float-left" src="img/pPhotoR3.png" alt="">
-                      <a href="#" class="float-right plusbox">
-                        <i class="far fa-plus-square" aria-hidden="true"></i>
-                      </a>
-                      <div>
-                        <span class="blog-post__author">username</span>
-                        <span class="recommended__blog__name">Tumblr blog name</span>
-                      </div>
-                    </div>
-                    <hr class="recommended__blogs__separator">
-              </li>
-              <li>
-                  <div class="recommended__blog">
-                      <img class="profile-img-sm float-left" src="img/pPhotoR4.png" alt="">
-                      <a href="#" class="float-right plusbox">
-                        <i class="far fa-plus-square" aria-hidden="true"></i>
-                      </a>
-                      <div>
-                        <span class="blog-post__author">username</span>
-                        <span class="recommended__blog__name">Tumblr blog name</span>
-                      </div>
-                    </div>
-                    <hr class="recommended__blogs__separator">
-              </li>
             </ul>
             <a href="#" class="explore">EXPLORE TUMBLR</a>
           </section>
@@ -303,6 +200,77 @@
         </div>
       </div>
     </section>
+    
+    <template id="blog-post-template">
+        <article class="row blog-post">
+            <div class="col-lg-2">
+              <img class="profile-img-lg" src="" alt="">
+            </div>
+            <div class="col-lg-10">
+              <div class="panel--mb">
+                <header class="blog-post__header">
+                  <span class="blog-post__text">Here's a blog:</span>
+                  <span class="blog-post__author"></span>
+                  <a href="#" class="follow">Follow</a>
+                  <div class="float-right">
+                    <button class="blog-post__menu-list__option">
+                      <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                    <button class="blog-post__menu-list__option">
+                      <i class="far fa-compass" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </header>
+                <section>
+                  <img src="" alt="" class="blog-post__image-content">
+                </section>
+                <footer class="blog-post__footer">
+                  <span class="blog-post__tags"></span>
+                  <span class="blog-post__notes"><span></span> notes</span>
+                  <ul class="float-right blog-post__menu-list">
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-comment" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </article>
+    </template>
+
+    <template id="recommended-blog-template">
+        <li>
+            <div class="recommended__blog">
+              <img class="profile-img-sm float-left" src="" alt="">
+              <a href="#" class="float-right plusbox">
+                <i class="far fa-plus-square" aria-hidden="true"></i>
+              </a>
+              <div>
+                <span class="blog-post__author"></span>
+                <span class="recommended__blog__name"></span>
+              </div>
+            </div>
+            <hr class="recommended__blogs__separator">
+        </li>
+    </template>
+
     <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
