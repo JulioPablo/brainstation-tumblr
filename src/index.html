@@ -71,7 +71,7 @@
     <div class="container">
       <div class="row">
         <main class="col-lg-7 offset-lg-1">
-          <section class="row">
+          <section class="row" id="menu">
             <div class="col-lg-2">
               <img class="profile-img-lg" src="img/pPhotoRetroGirl.png" alt="">
             </div>
@@ -186,9 +186,9 @@
                   </div>
                 </section>
                 <section id="text-modal-content" class="modal__content">
-                  <form name="text-post" method="POST" netlify class="text-post-form" action="/">
+                  <form id="text-post-form" name="text-post" method="POST" netlify class="text-post-form" action="/">
                     <input class="text-post-form__field" type="text" placeholder="Title" name="title">
-                    <textarea class="text-post-form__field text-post-form__field--content" name="" id="" cols="30" rows="10" placeholder="Your text here" name="content"></textarea>
+                    <textarea class="text-post-form__field text-post-form__field--content" placeholder="Your text here" name="content"></textarea>
                     <input class="text-post-form__field text-post-form--tags" type="text" placeholder="#tags" name="tags">
                     <ul class="text-post-form__upload-options">
                       <li class="text-post-form__upload-option">
@@ -217,7 +217,7 @@
                 <footer class="modal__footer">
                   <button id="close-modal-btn" class="modal__close-btn">CLOSE</button>
                   <i class="fab fa-twitter ml-auto" aria-hidden="true"></i>
-                  <button type="submit" class="modal__post-btn">POST <i class="fas fa-angle-down" aria-hidden="true"></i></button>
+                  <button form="text-post-form" type="submit" class="modal__post-btn">POST <i class="fas fa-angle-down" aria-hidden="true"></i></button>
                 </footer>
               </div>
           </div>
@@ -245,10 +245,9 @@
                     </button>
                   </div>
                 </header>
-                <section>
-                  <img src="" alt="" class="blog-post__image-content">
+                <section class="blog-post__content">
                 </section>
-                <footer class="blog-post__footer">
+                <footer class="blog-post__footer cf">
                   <span class="blog-post__tags"></span>
                   <span class="blog-post__notes"><span></span> notes</span>
                   <ul class="float-right blog-post__menu-list">
@@ -277,6 +276,66 @@
               </div>
             </div>
           </article>
+    </template>
+
+    <template id="own-blog-post-template">
+        <article class="row blog-post">
+            <div class="col-lg-2">
+              <img class="profile-img-lg" src="img/pPhotoRetroGirl.png" alt="">
+            </div>
+            <div class="col-lg-10">
+              <div class="panel--mb">
+                <header class="blog-post__header">
+                  <span class="blog-post__author">You</span>
+                  <div class="float-right">
+                    <button class="blog-post__menu-list__option">
+                      <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                    <button class="blog-post__menu-list__option">
+                      <i class="far fa-compass" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </header>
+                <section class="blog-post__content">
+                </section>
+                <footer class="blog-post__footer cf">
+                  <span class="blog-post__tags"></span>
+                  <span class="blog-post__notes"><span></span></span>
+                  <ul class="float-right blog-post__menu-list">
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-comment" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="fas fa-cog" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </article>
+    </template>
+
+    <template id="blog-post-image-content-template">
+        <img src="" alt="" class="blog-post__image-content">
+    </template>
+
+    <template id="blog-post-text-content-template">
+        <h3 class="blog-post__content__title"></h3>
+        <p class="blog-post__content__text"></p>
     </template>
 
     <template id="recommended-blog-template">
