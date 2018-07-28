@@ -1,0 +1,254 @@
+/*Vendor overrides*/
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-link{
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: 900;
+
+    .fa, .far, .fas{
+        color: #6A7684;
+    }
+
+    .fa:hover, .far:hover,.fas:hover{
+        color: #FFF;
+    }
+}
+
+.nav-item.active{
+    .fa, .far, .fas{
+        color: #FFF;
+    }
+}
+
+/*Vendor overrides*/
+
+/*Global overrides*/
+
+body{
+    background-color: #d2dae6;
+}
+
+a{
+    color: $a-color;
+}
+
+/*Global overrides*/
+
+.dash-header{
+    margin-bottom: 40px;
+}
+
+.dash-header__nav{
+    padding: 17px 60px;
+    background-color: $nav-color;
+    color: #fff;
+}
+
+.dash-header__nav__logo{
+    margin-right: 60px;
+}
+
+.dash-header__search-form{
+    height: 33px;
+    width: 314px;
+    background-color: $search-color;
+    border: none;
+}
+
+.dash-header__search-form__button{
+    height: 100%;
+    line-height: 100%;
+    width: 15%;
+    background-color: inherit;
+    border: none;
+    border-left: 1px;
+    padding-left: 20px;
+    padding-right: 12px;
+}
+
+.dash-header__search-form__input.form-control, .dash-header__search-form__input:focus.form-control {
+    height: 100%;
+    width: 85%;
+    background-color: inherit;
+    border: none;
+    border-right: 1px;
+    color: #ADB0B4;
+    padding: 0;
+}
+
+.profile-img-lg{
+    width: 65px;
+    height: 65px;
+    border-radius: 1px;
+}
+
+.panel--mb{
+    margin-bottom: 30px;
+}
+
+.post-menu__list, .blog-post__menu-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 0;
+    list-style: none;
+}
+
+.post-menu__list__icon-undertext{
+    display: inline-block;
+    margin-top: 10px;
+    color: #565656;
+}
+
+.post-menu{
+    border-radius: 1px;
+    background-color: #fff;
+    padding: 15px 20px;
+}
+
+.blog-post__header{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: #FFF;
+    width: 100%;
+    padding: 30px;
+
+}
+
+.blog-post__text{
+    color: #a7a7a7;
+}
+
+.blog-post__author,.blog-post__notes{
+    color: #8f8f8f;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.blog-post__notes--small{
+    font-size: 13px;
+}
+
+.blog-post__footer{
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #FFF;
+    padding: 30px;
+    width: 100%;
+}
+
+.blog-post__tags{
+    display: block;
+    margin-bottom: 30px;
+    color: #cdcdcd;
+}
+
+.blog-post__image-content{
+    width: 100%;
+    height: 377px;
+    display: block;
+}
+
+.blog-post__menu-list__option{
+    margin-left: 30px;
+    display: inline-block;
+    color: #6A7684;
+    font-size: 20px;
+    background: none;
+    border: none;
+}
+
+
+.recommended__blogs{
+    padding: 0;
+    list-style: none;
+}
+
+.side-panel{
+    border-radius: 1px;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.nav__weirdSquare{
+    display: inline-block;
+    background-color: #529ecc;
+    border-radius: 5px;
+    padding: 3px 10px;
+
+}
+
+.--mb{
+    margin-bottom: 39px;
+}
+
+.username,.notes{
+    color: #8f8f8f;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.follow{
+    margin-left: 25px;
+}
+
+
+.radar__img{
+    padding: 20px 30px 15px 30px;
+    display: block;
+    max-width: 100%;
+}
+
+.radar__bottom{
+    padding: 0 30px 25px 30px;
+}
+
+.explore{
+    display: inline-block;
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.recommended__blog{
+    padding: 20px 30px;
+}
+
+.recommended__blogs__text{
+    font-weight: bold;
+    color: #565656;
+    font-size: 13px;
+    padding: 0 30px;
+}
+
+.recommended__blogs__separator{
+    margin: 0;
+}
+
+.recommended__blog__name{
+    display: block;
+    line-height: 12px;
+    font-size: 12px;
+}
+
+.plusbox{
+    padding: 10px 0;
+    display: inline-block;
+    color: #6A7684;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.profile-img-sm{
+    width: 35px;
+    height: 35px;
+    border-radius: 1px;
+    margin-right: 15px;
+}

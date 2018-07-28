@@ -29,14 +29,21 @@ gulp.task('html', () => {
     .pipe(gulp.dest('build/'))
 })
 
+gulp.task('js', () => {
+  return gulp.src('src/js/**/*.js')
+    .pipe(gulp.dest('build/js'))
+})
+
 gulp.task('img', () => {
-    return gulp.src('src/**/*.png')
+    return gulp.src('src/**/*.{gif,jpg,png,svg}')
       .pipe(gulp.dest('build/'))
   })
 
 gulp.task('watch', () => {
     gulp.watch('src/sass/**/*.scss', ['styles'],cb => cb)
     gulp.watch('src/**/*.html', ['html'],cb => cb)
+    gulp.watch('src/js/**/*.js', ['js'],cb => cb)
+
 })
 gulp.task('server', () => {
   gulp.src('build/')
@@ -48,7 +55,7 @@ gulp.task('server', () => {
 
 gulp.task('lint-css', () => {
 
-    gulp.src('src/sass/main.scss')
+    gulp.src('src/sass/**/*.scss')
     .pipe(gulpStylelint({
       reporters: [
         {formatter: 'string', console: true}
@@ -58,6 +65,7 @@ gulp.task('lint-css', () => {
 
 gulp.task('build', [
   'html',
+  'js',
   'img',
   'styles'
 ], cb => cb);

@@ -2,17 +2,17 @@
 <html>
 
   <head>
-    <title>Tumblr Test</title>
+    <title>Tumblr Dashboard Mockup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <meta charset="utf-8">
   </head>
 
   <body>
-    <header class="header --mb">
-      <nav class="header__nav navbar navbar-expand-lg navbar-light">
+    <header class="dash-header">
+      <nav class="dash-header__nav navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-          <img class="header__nav__logo" src="img/tumblrIcon.png" alt="">
+          <img class="dash-header__nav__logo" src="img/tumblrIcon.png" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -20,45 +20,45 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <form class="form-inline my-2 my-lg-0 searchform">
-            <button class="btn my-2 my-sm-0 searchform__button" type="submit">
+          <form class="form-inline my-2 my-lg-0 dash-header__search-form">
+            <button class="btn my-2 my-sm-0 dash-header__search-form__button" type="submit">
               <img src="img/searchIcon.png" alt="">
             </button>
-            <input class="form-control searchform__input" type="search" placeholder="Search Tumblr" aria-label="Search">
+            <input class="form-control dash-header__search-form__input" type="search" placeholder="Search Tumblr" aria-label="Search">
           </form>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link nav__icon" href="#">
+              <a class="nav-link" href="#">
                 <i class="fas fa-home" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__icon" href="#">
+              <a class="nav-link" href="#">
                 <i class="far fa-compass" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__icon" href="#">
+              <a class="nav-link" href="#">
                 <i class="far fa-envelope" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__icon" href="#">
+              <a class="nav-link" href="#">
                 <i class="far fa-comment" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__icon" href="#">
+              <a class="nav-link" href="#">
                 <i class="fas fa-bolt" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__icon" href="#">
+              <a class="nav-link" href="#">
                 <i class="fas fa-user" aria-hidden="true"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav__icon nav__weirdSquare" href="#">
+              <a class="nav-link  nav__weirdSquare" href="#">
                 <i class="fas fa-pencil-alt" aria-hidden="true"></i>
               </a>
             </li>
@@ -71,52 +71,52 @@
         <main class="col-lg-7 offset-lg-1">
           <section class="row">
             <div class="col-lg-2">
-              <img class="lg__profile" src="img/pPhotoRetroGirl.png" alt="">
+              <img class="profile-img-lg" src="img/pPhotoRetroGirl.png" alt="">
             </div>
             <div class="col-lg-10">
-              <div class="main__panel panel--mb">
+              <div class="post-menu panel--mb">
                 <nav>
-                  <ul class="list--space-evenly list--unstyled">
+                  <ul class="post-menu__list">
                     <li>
-                      <a href="#">
-                        <span class="main__panel__icon sprite sprite__text"></span>
-                        <span class="main__panel__icon__undertext">Text</span>
+                      <a id="post-text" href="#">
+                        <span class="post-menu__sprite post-menu__sprite--text"></span>
+                        <span class="post-menu__list__icon-undertext">Text</span>
                       </a>
                     </li>
                     <li>
-                      <a href="#">
-                        <span class="main__panel__icon sprite sprite__camera"></span>
-                        <span class="main__panel__icon__undertext">Photo</span>
+                      <a id="post-photo" href="#">
+                        <span class="post-menu__sprite post-menu__sprite--camera"></span>
+                        <span class="post-menu__list__icon-undertext">Photo</span>
                       </a>
                     </li>
                     <li>
                       <a href="#" class=>
-                        <span class="main__panel__icon sprite sprite__quote"></span>
-                        <span class="main__panel__icon__undertext">Quote</span>
+                        <span class="post-menu__sprite post-menu__sprite--quote"></span>
+                        <span class="post-menu__list__icon-undertext">Quote</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span class="main__panel__icon sprite sprite__link"></span>
-                        <span class="main__panel__icon__undertext">Link</span>
+                        <span class="post-menu__sprite post-menu__sprite--link"></span>
+                        <span class="post-menu__list__icon-undertext">Link</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span class="main__panel__icon sprite sprite__chat"></span>
-                        <span class="main__panel__icon__undertext">Chat</span>
+                        <span class=" post-menu__sprite post-menu__sprite--chat"></span>
+                        <span class="post-menu__list__icon-undertext">Chat</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span class="main__panel__icon sprite sprite__audio"></span>
-                        <span class="main__panel__icon__undertext">Audio</span>
+                        <span class=" post-menu__sprite post-menu__sprite--audio"></span>
+                        <span class="post-menu__list__icon-undertext">Audio</span>
                       </a>
                     </li>
                     <li>
                       <a href="#">
-                        <span class="main__panel__icon sprite sprite__video"></span>
-                        <span class="main__panel__icon__undertext">Video</span>
+                        <span class=" post-menu__sprite post-menu__sprite--video"></span>
+                        <span class="post-menu__list__icon-undertext">Video</span>
                       </a>
                     </li>
                   </ul>
@@ -124,49 +124,49 @@
               </div>
             </div>
           </section>
-          <article class="row">
+          <article class="row blog-post">
             <div class="col-lg-2">
-              <img class="lg__profile" src="img/pPhotoGuy.png" alt="">
+              <img class="profile-img-lg" src="img/pPhotoGuy.png" alt="">
             </div>
             <div class="col-lg-10">
-              <div class="main_panel panel--mb">
-                <header class="panel__header">
-                  <span class="panel__text">Here's a blog:</span>
-                  <span class="username">bob-strauss</span>
+              <div class="panel--mb">
+                <header class="blog-post__header">
+                  <span class="blog-post__text">Here's a blog:</span>
+                  <span class="blog-post__author">bob-strauss</span>
                   <a href="#" class="follow">Follow</a>
                   <div class="float-right">
-                    <button class="panel__option">
+                    <button class="blog-post__menu-list__option">
                       <i class="fas fa-times" aria-hidden="true"></i>
                     </button>
-                    <button class="panel__option">
+                    <button class="blog-post__menu-list__option">
                       <i class="far fa-compass" aria-hidden="true"></i>
                     </button>
                   </div>
                 </header>
                 <section>
-                  <img src="img/mainPhoto.png" alt="" class="image__post">
+                  <img src="img/mainPhoto.png" alt="" class="blog-post__image-content">
                 </section>
-                <footer class="panel__footer">
-                  <span class="tags">#forest #nature #darkness #blackforest</span>
-                  <span class="notes">234,450 notes</span>
-                  <ul class="float-right list--unstyled list--space-evenly">
+                <footer class="blog-post__footer">
+                  <span class="blog-post__tags">#forest #nature #darkness #blackforest</span>
+                  <span class="blog-post__notes">234,450 notes</span>
+                  <ul class="float-right blog-post__menu-list">
                     <li>
-                      <button class="panel__option">
+                      <button class="blog-post__menu-list__option">
                         <i class="far fa-paper-plane" aria-hidden="true"></i>
                       </button>
                     </li>
                     <li>
-                      <button class="panel__option">
+                      <button class="blog-post__menu-list__option">
                         <i class="far fa-comment" aria-hidden="true"></i>
                       </button>
                     </li>
                     <li>
-                      <button class="panel__option">
+                      <button class="blog-post__menu-list__option">
                         <i class="fas fa-exchange-alt" aria-hidden="true"></i>
                       </button>
                     </li>
                     <li>
-                      <button class="panel__option">
+                      <button class="blog-post__menu-list__option">
                         <i class="far fa-heart" aria-hidden="true"></i>
                       </button>
                     </li>
@@ -177,17 +177,17 @@
           </article>
         </main>
         <aside class="col-lg-3 offset-lg-1">
-          <section class="side__panel panel--mb">
+          <section class="side-panel panel--mb">
             <h3 class="recommended__blogs__text">RECOMMENDED BLOGS</h3>
-            <ul class="list--unstyled">
+            <ul class="recommended__blogs">
               <li>
                   <div class="recommended__blog">
-                    <img class="sm__profile float-left" src="img/pPhotoR1.png" alt="">
+                    <img class="profile-img-sm float-left" src="img/pPhotoR1.png" alt="">
                     <a href="#" class="float-right plusbox">
-                      <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                      <i class="far fa-plus-square" aria-hidden="true"></i>
                     </a>
                     <div>
-                      <span class="username">username</span>
+                      <span class="blog-post__author">username</span>
                       <span class="recommended__blog__name">Tumblr blog name</span>
                     </div>
                   </div>
@@ -195,12 +195,12 @@
               </li>
               <li>
                   <div class="recommended__blog">
-                      <img class="sm__profile float-left" src="img/pPhotoR2.png" alt="">
+                      <img class="profile-img-sm float-left" src="img/pPhotoR2.png" alt="">
                       <a href="#" class="float-right plusbox">
-                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                        <i class="far fa-plus-square" aria-hidden="true"></i>
                       </a>
                       <div>
-                        <span class="username">username</span>
+                        <span class="blog-post__author">username</span>
                         <span class="recommended__blog__name">Tumblr blog name</span>
                       </div>
                     </div>
@@ -208,12 +208,12 @@
               </li>
               <li>
                   <div class="recommended__blog">
-                      <img class="sm__profile float-left" src="img/pPhotoR3.png" alt="">
+                      <img class="profile-img-sm float-left" src="img/pPhotoR3.png" alt="">
                       <a href="#" class="float-right plusbox">
-                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                        <i class="far fa-plus-square" aria-hidden="true"></i>
                       </a>
                       <div>
-                        <span class="username">username</span>
+                        <span class="blog-post__author">username</span>
                         <span class="recommended__blog__name">Tumblr blog name</span>
                       </div>
                     </div>
@@ -221,12 +221,12 @@
               </li>
               <li>
                   <div class="recommended__blog">
-                      <img class="sm__profile float-left" src="img/pPhotoR4.png" alt="">
+                      <img class="profile-img-sm float-left" src="img/pPhotoR4.png" alt="">
                       <a href="#" class="float-right plusbox">
-                        <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                        <i class="far fa-plus-square" aria-hidden="true"></i>
                       </a>
                       <div>
-                        <span class="username">username</span>
+                        <span class="blog-post__author">username</span>
                         <span class="recommended__blog__name">Tumblr blog name</span>
                       </div>
                     </div>
@@ -235,30 +235,74 @@
             </ul>
             <a href="#" class="explore">EXPLORE TUMBLR</a>
           </section>
-          <section class="side__panel">
+          <section class="side-panel">
             <h3 class="recommended__blogs__text">RADAR</h3>
             <div class="recommended__blog">
-              <img class="sm__profile float-left" src="img/pPhotoRadarGirl.png" alt="">
+              <img class="profile-img-sm float-left" src="img/pPhotoRadarGirl.png" alt="">
               <a href="#" class="float-right plusbox">
-                <i class="fa fa-plus-square-o" aria-hidden="true"></i>
+                <i class="far fa-plus-square" aria-hidden="true"></i>
               </a>
               <div>
-                <span class="username">username</span>
+                <span class="blog-post__author">username</span>
                 <span class="recommended__blog__name">Tumblr blog name</span>
               </div>
             </div>
             <img class="radar__img" src="img/radarPhoto.png" alt="">
             <div class="radar__bottom">
-              <span class="notes">1,320 notes</span>
-              <div class="float-right">
-                <a href="#" class="panel__option option__turn"></a>
-                <a href="#" class="panel__option option__heart"></a>
-              </div>
+              <span class="blog-post__notes blog-post__notes--small">1,320 notes</span>
+              <ul class="float-right blog-post__menu-list">
+                  <li>
+                    <button class="blog-post__menu-list__option">
+                      <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="blog-post__menu-list__option">
+                      <i class="far fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </li>
+              </ul>
             </div>
           </section>
         </aside>
       </div>
     </div>
-    <script type="text/javascript" src="index.js"></script>
+    <section id="modal" role="dialog" class="modal__background">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 offset-sm-3">
+              <div class="post__modal">
+                <header class="modal__header">
+                  <span class="modal__header__option">mikemike <i class="fas fa-angle-down" aria-hidden="true"></i></span>
+                  <i class="fas fa-cog ml-auto" aria-hidden="true"></i>
+                </header>
+                <section id="photo-modal-content" class="modal__content">
+                  <div class="modal__upload__panel">
+                      <i class="fas fa-camera-retro fa-4x --centered-icon" aria-hidden="true"></i>
+                      <span class="upload__panel__undertext">Upload Photos</span>
+                  </div>
+                  <div class="modal__upload__panel">
+                      <i class="fas fa-globe fa-4x --centered-icon" aria-hidden="true"></i>
+                      <span class="upload__panel__undertext">Upload Photos</span>
+                  </div>
+                </section>
+                <section id="text-modal-content" class="modal__content">
+                  <form>
+                    <input type="text" placeholder="Title">
+                    <textarea name="" id="" cols="30" rows="10" placeholder:="Your text here">
+                    </textarea>
+                  </form>
+                  </section>
+                <footer class="modal__footer">
+                  <button id="close-modal-btn" class="modal__close-btn">CLOSE</button>
+                  <i class="fab fa-twitter ml-auto" aria-hidden="true"></i>
+                  <button class="modal__post-btn">POST <i class="fas fa-angle-down" aria-hidden="true"></i></button>
+                </footer>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

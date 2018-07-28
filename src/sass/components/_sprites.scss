@@ -1,0 +1,55 @@
+.post-menu__sprite{
+    background-image: url($img-path + "spritesheet.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.post-menu__sprite--text{
+    background-position-x: -5px;
+    background-position-y: -73px;
+    width: 26px;
+    height: 16px;
+}
+
+.post-menu__sprite--camera{
+    background-position-x: -75px;
+    background-position-y: -5px;
+    width: 40px;
+    height: 25px;
+}
+
+.post-menu__sprite--audio {
+    background-position-x: 2px;
+    background-position-y: -5px;
+    width: 35px;
+    height: 29px;
+}
+
+.post-menu__sprite--link{
+    background-position-x: -40px;
+    background-position-y: -40px;
+    width: 30px;
+    height: 29px;
+}
+
+.post-menu__sprite--chat{
+    background-position-x: -43px;
+    background-position-y: -5px;
+    width: 27px;
+    height: 27px;
+}
+
+.post-menu__sprite--video{
+    background-position-x: -80px;
+    background-position-y: -73px;
+    width: 31px;
+    height: 22px;
+}
+
+
+.post-menu__sprite--quote{
+    background-position-x: -72px;
+    background-position-y: -40px;
+    width: 40px;
+    height: 23px;
+}

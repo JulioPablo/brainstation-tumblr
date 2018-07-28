@@ -1,0 +1,85 @@
+@import "_variables";
+
+.body--loginbg{
+    background-image: url($img-path + "bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-top: 215px;
+}
+
+.body--loginbg:before{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(54,70,93,.8);
+    z-index: -1;
+    content: "";
+}
+
+.logo--lg{
+    background-image: url($img-path + "logo_lg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 280px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.sign-in-form__input{
+    width: 375px;
+    height: 60px;
+    line-height: 60px;
+    padding: 20px 0 20px 30px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+
+.sign-in-form{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.sign-in-form__button{
+    display: inline-block;
+    padding: 20px 150px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: bold;
+    width: 375px;
+}
+
+.next-button{
+    background-color: #ec8524;
+}
+
+.sign-up-button{
+    background-color: transparent;
+}
+
+.footer__nav{
+    list-style: none;
+    color: #8c919b;
+    text-align: center
+}
+
+.footer__nav li {
+    padding: 0 25px;
+    display: inline-block;
+}
+
+.footer{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+}
