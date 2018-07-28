@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Tumblr Dashboard Mockup</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <header class="dash-header">
+      <nav class="dash-header__nav navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img class="dash-header__nav__logo" src="img/tumblrIcon.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 dash-header__search-form">
+            <button class="btn my-2 my-sm-0 dash-header__search-form__button" type="submit">
+                <i class="fas fa-search" aria-hidden="true"></i>
+            </button>
+            <input class="form-control dash-header__search-form__input" type="search" placeholder="Search Tumblr" aria-label="Search">
+          </form>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                <i class="fas fa-home" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="far fa-compass" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="far fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="far fa-comment" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-user" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  nav__weirdSquare" href="#">
+                <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="row">
+        <main class="col-lg-7 offset-lg-1">
+          <section class="row" id="menu">
+            <div class="col-lg-2">
+              <img class="profile-img-lg" src="img/pPhotoRetroGirl.png" alt="">
+            </div>
+            <div class="col-lg-10">
+              <div class="post-menu panel--mb">
+                <nav>
+                  <ul class="post-menu__list">
+                    <li>
+                      <a id="post-text" href="#">
+                        <span class="post-menu__sprite post-menu__sprite--text"></span>
+                        <span class="post-menu__list__icon-undertext">Text</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a id="post-photo" href="#">
+                        <span class="post-menu__sprite post-menu__sprite--camera"></span>
+                        <span class="post-menu__list__icon-undertext">Photo</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class=>
+                        <span class="post-menu__sprite post-menu__sprite--quote"></span>
+                        <span class="post-menu__list__icon-undertext">Quote</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="post-menu__sprite post-menu__sprite--link"></span>
+                        <span class="post-menu__list__icon-undertext">Link</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class=" post-menu__sprite post-menu__sprite--chat"></span>
+                        <span class="post-menu__list__icon-undertext">Chat</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class=" post-menu__sprite post-menu__sprite--audio"></span>
+                        <span class="post-menu__list__icon-undertext">Audio</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class=" post-menu__sprite post-menu__sprite--video"></span>
+                        <span class="post-menu__list__icon-undertext">Video</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+        </main>
+        <aside class="col-lg-3 offset-lg-1">
+          <section class="side-panel panel--mb">
+            <h3 class="recommended__blogs__text">RECOMMENDED BLOGS</h3>
+            <ul class="recommended__blogs">
+            </ul>
+            <a href="#" class="explore">EXPLORE TUMBLR</a>
+          </section>
+          <section class="side-panel">
+            <h3 class="recommended__blogs__text">RADAR</h3>
+            <div class="recommended__blog">
+              <img class="profile-img-sm float-left" src="img/pPhotoRadarGirl.png" alt="">
+              <a href="#" class="float-right plusbox">
+                <i class="far fa-plus-square" aria-hidden="true"></i>
+              </a>
+              <div>
+                <span class="blog-post__author">username</span>
+                <span class="recommended__blog__name">Tumblr blog name</span>
+              </div>
+            </div>
+            <img class="radar__img" src="img/radarPhoto.png" alt="">
+            <div class="radar__bottom">
+              <span class="blog-post__notes blog-post__notes--small">1,320 notes</span>
+              <ul class="float-right blog-post__menu-list">
+                  <li>
+                    <button class="blog-post__menu-list__option">
+                      <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="blog-post__menu-list__option">
+                      <i class="far fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+    <section id="modal" role="dialog" class="modal__background">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 offset-sm-3">
+              <div class="post__modal">
+                <header class="modal__header">
+                  <span class="modal__header__option">mikemike <i class="fas fa-angle-down" aria-hidden="true"></i></span>
+                  <i class="fas fa-cog ml-auto" aria-hidden="true"></i>
+                </header>
+                <section id="photo-modal-content" class="modal__content">
+                  <div class="modal__upload__panel">
+                      <i class="fas fa-camera-retro fa-4x --centered-icon" aria-hidden="true"></i>
+                      <span class="upload__panel__undertext">Upload Photos</span>
+                  </div>
+                  <div class="modal__upload__panel">
+                      <i class="fas fa-globe fa-4x --centered-icon" aria-hidden="true"></i>
+                      <span class="upload__panel__undertext">Upload Photos</span>
+                  </div>
+                </section>
+                <section id="text-modal-content" class="modal__content">
+                  <form id="text-post-form" name="text-post" method="POST" netlify class="text-post-form" action="/dashboard.html">
+                    <input class="text-post-form__field" type="text" placeholder="Title" name="title">
+                    <textarea class="text-post-form__field text-post-form__field--content" placeholder="Your text here" name="content"></textarea>
+                    <input class="text-post-form__field text-post-form--tags" type="text" placeholder="#tags" name="tags">
+                    <ul class="text-post-form__upload-options">
+                      <li class="text-post-form__upload-option">
+                          <button class="text-post-form__upload-option__button">
+                              <i class="fas fa-camera" aria-hidden="true"></i>
+                          </button>
+                      </li>
+                      <li class="text-post-form__upload-option">
+                          <button class="text-post-form__upload-option__button">
+                              <i class="fas fa-video" aria-hidden="true"></i>
+                          </button>
+                      </li>
+                      <li class="text-post-form__upload-option">
+                          <button class="text-post-form__upload-option__button">
+                              <i class="far fa-image" aria-hidden="true"></i>
+                          </button>
+                      </li>
+                      <li class="text-post-form__upload-option">
+                        <button class="text-post-form__upload-option__button">
+                            <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
+                        </button>
+                      </li>
+                    </ul>
+                  </form>
+                  </section>
+                <footer class="modal__footer">
+                  <button id="close-modal-btn" class="modal__close-btn">CLOSE</button>
+                  <i class="fab fa-twitter ml-auto" aria-hidden="true"></i>
+                  <button form="text-post-form" type="submit" class="modal__post-btn">POST <i class="fas fa-angle-down" aria-hidden="true"></i></button>
+                </footer>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <template id="blog-post-template">
+        <article class="row blog-post">
+            <div class="col-lg-2">
+              <img class="profile-img-lg" src="" alt="">
+            </div>
+            <div class="col-lg-10">
+              <div class="panel--mb">
+                <header class="blog-post__header">
+                  <span class="blog-post__text">Here's a blog:</span>
+                  <span class="blog-post__author"></span>
+                  <a href="#" class="follow">Follow</a>
+                  <div class="float-right">
+                    <button class="blog-post__menu-list__option">
+                      <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                    <button class="blog-post__menu-list__option">
+                      <i class="far fa-compass" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </header>
+                <section class="blog-post__content">
+                </section>
+                <footer class="blog-post__footer cf">
+                  <span class="blog-post__tags"></span>
+                  <span class="blog-post__notes"><span></span> notes</span>
+                  <ul class="float-right blog-post__menu-list">
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-comment" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-heart" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </article>
+    </template>
+
+    <template id="own-blog-post-template">
+        <article class="row blog-post">
+            <div class="col-lg-2">
+              <img class="profile-img-lg" src="img/pPhotoRetroGirl.png" alt="">
+            </div>
+            <div class="col-lg-10">
+              <div class="panel--mb">
+                <header class="blog-post__header">
+                  <span class="blog-post__author">You</span>
+                  <div class="float-right">
+                    <button class="blog-post__menu-list__option">
+                      <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+                    <button class="blog-post__menu-list__option">
+                      <i class="far fa-compass" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                </header>
+                <section class="blog-post__content">
+                </section>
+                <footer class="blog-post__footer cf">
+                  <span class="blog-post__tags"></span>
+                  <span class="blog-post__notes"><span></span></span>
+                  <ul class="float-right blog-post__menu-list">
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-paper-plane" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="far fa-comment" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <button class="blog-post__menu-list__option">
+                        <i class="fas fa-cog" aria-hidden="true"></i>
+                      </button>
+                    </li>
+                  </ul>
+                </footer>
+              </div>
+            </div>
+          </article>
+    </template>
+
+    <template id="blog-post-image-content-template">
+        <img src="" alt="" class="blog-post__image-content">
+    </template>
+
+    <template id="blog-post-text-content-template">
+        <h3 class="blog-post__content__title"></h3>
+        <p class="blog-post__content__text"></p>
+    </template>
+
+    <template id="recommended-blog-template">
+        <li>
+            <div class="recommended__blog">
+              <img class="profile-img-sm float-left" src="" alt="">
+              <a href="#" class="float-right plusbox">
+                <i class="far fa-plus-square" aria-hidden="true"></i>
+              </a>
+              <div>
+                <span class="blog-post__author"></span>
+                <span class="recommended__blog__name"></span>
+              </div>
+            </div>
+            <hr class="recommended__blogs__separator">
+        </li>
+    </template>
+
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
