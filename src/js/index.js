@@ -1,3 +1,6 @@
+const ACCESS_TOKEN = 'efd8f49eea411ca23ebaaab6340a79417afd1c4dc52919e2c97652a879334095';
+const OWN_POSTS_URL = 'https://api.netlify.com/api/v1/sites/' + location.host + '/submissions?access_token=' + ACCESS_TOKEN;
+
 let postText = document.querySelector('#post-text');
 let postPhoto = document.querySelector('#post-photo');
 let photoContent = document.querySelector('#photo-modal-content');
@@ -55,9 +58,9 @@ function get(url, callback){
       });
 }
 
-get('https://api.netlify.com/api/v1/sites/adoring-leakey-915c67.netlify.com/submissions?access_token=efd8f49eea411ca23ebaaab6340a79417afd1c4dc52919e2c97652a879334095',(j)=>{
+get(OWN_POSTS_URL,(j)=>{
     let blogPost;
-    for(let i = 0; i < j.length; i++){
+    for(let i = (j.length - 1); i >= 0; i--){
         blogPost = ownBlogPostTemplate.content.cloneNode(true);
         blogPost.querySelector('.blog-post__content').appendChild(blogPostTextContentTemplate.content.cloneNode(true));
         blogPost.querySelector('.blog-post__content__title').innerHTML = j[i].data.title;
