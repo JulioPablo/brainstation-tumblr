@@ -34,7 +34,7 @@ gulp.task('html', () => {
     .pipe(gulp.dest('build/'))
 })
 
-gulp.task('js',['lint-js'], (cb) => {
+gulp.task('js', (cb) => {
     return gulp.src('src/js/**/*.js')
     .pipe(babel({
       presets: ['es2015']
@@ -68,7 +68,7 @@ gulp.task('mock-api', () => {
     .pipe(gulp.dest('build/api'))
 })
 
-gulp.task('lint-js', () => {
+gulp.task('lint-js',['js'],() => {
   return gulp.src('src/js/**/*.js')
       .pipe(eslint({
         rules: {
@@ -94,7 +94,7 @@ gulp.task('lint-css', () => {
 
 gulp.task('build', [
   'html',
-  'js',
+  'lint-js',
   'img',
   'styles',
   'mock-api'
