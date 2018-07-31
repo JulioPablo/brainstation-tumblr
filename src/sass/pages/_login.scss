@@ -36,13 +36,22 @@
     height: 60px;
     line-height: 60px;
     padding: 20px 0 20px 30px;
-    margin-bottom: 30px;
     border-radius: 2px;
 }
 
 .sign-in-form{
     padding-top: 100px;
     text-align: center;
+}
+
+.sign-in-form__input-container{
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.invalid-feedback{
+    font-size: 16px;
 }
 
 .sign-in-form__button{
