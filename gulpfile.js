@@ -4,7 +4,12 @@ let gutil =  require('gulp-util')
 let sass = require('gulp-sass')
 let webserver = require('gulp-webserver');
 let gulpStylelint = require('gulp-stylelint');
-let path = require('path')
+let path = require('path');
+var pump = require('pump');
+let babel = require('gulp-babel');
+let uglify = require('gulp-uglify');
+const eslint = require('gulp-eslint');
+
 
 /* Styles task */
 gulp.task('styles',['lint-css','webfonts'], () => {
@@ -29,9 +34,14 @@ gulp.task('html', () => {
     .pipe(gulp.dest('build/'))
 })
 
-gulp.task('js', () => {
-  return gulp.src('src/js/**/*.js')
+gulp.task('js',['lint-js'], (cb) => {
+    return gulp.src('src/js/**/*.js')
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(uglify())
     .pipe(gulp.dest('build/js'))
+
 })
 
 gulp.task('img', () => {
@@ -57,6 +67,19 @@ gulp.task('mock-api', () => {
   return gulp.src('src/api/**/*.*')
     .pipe(gulp.dest('build/api'))
 })
+
+gulp.task('lint-js', () => {
+  return gulp.src('src/js/**/*.js')
+      .pipe(eslint({
+        rules: {
+          "comma-dangle": 2,
+          "semi": ["error", "always"],
+          "quotes": ["error", "single"]
+        }
+      }))
+      .pipe(eslint.format())
+      .pipe(eslint.failAfterError());
+});
 
 
 gulp.task('lint-css', () => {
