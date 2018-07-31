@@ -16,8 +16,19 @@
                     <div class="logo--lg"></div>
                 </div>
                 <div class="col-sm-6 offset-sm-3">
-                    <form action="/dashboard.html" class="sign-in-form">
-                            <input class="sign-in-form__input" placeholder="Email" type="text">
+                    <form id="sign-in" action="/dashboard.html" class="sign-in-form" novalidate>
+                        <div class="sign-in-form__input-container">
+                            <input id="email-field" class="sign-in-form__input" placeholder="bobby.ray@brainstation.io" type="email">
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
+                        </div>
+                        <div class="sign-in-form__input-container">
+                            <input id="pass-field" class="sign-in-form__input" placeholder="12345" type="password">
+                            <div class="invalid-feedback">
+                                Incorrect username or password, try again.
+                            </div>                        
+                        </div>
                             <button type="submit" class="sign-in-form__button next-button">Next</button>
                             <button class="sign-in-form__button sign-up-button">Sign up</button>
                     </form>
@@ -42,5 +53,6 @@
                 </nav>
             </footer>
     </div>
+    <script src="js/validation.js"></script>
 </body>
 </html>
