@@ -68,7 +68,7 @@ gulp.task('mock-api', () => {
     .pipe(gulp.dest('build/api'))
 })
 
-gulp.task('lint-js',['js'],() => {
+gulp.task('lint-js',() => {
   return gulp.src('src/js/**/*.js')
       .pipe(eslint({
         rules: {
@@ -94,7 +94,7 @@ gulp.task('lint-css', () => {
 
 gulp.task('build', [
   'html',
-  'lint-js',
+  'js',
   'img',
   'styles',
   'mock-api'
