@@ -12,9 +12,9 @@ let recommendedBlogs = document.querySelector('.recommended__blogs');
 
 let blogPostTemplate = document.querySelector('#blog-post-template');
 let recommendedBlogTemplate = document.querySelector('#recommended-blog-template');
-let blogPostImageContentTemplate = document.querySelector("#blog-post-image-content-template");
-let blogPostTextContentTemplate =  document.querySelector("#blog-post-text-content-template");
-let ownBlogPostTemplate = document.querySelector("#own-blog-post-template");
+let blogPostImageContentTemplate = document.querySelector('#blog-post-image-content-template');
+let blogPostTextContentTemplate =  document.querySelector('#blog-post-text-content-template');
+let ownBlogPostTemplate = document.querySelector('#own-blog-post-template');
 
 let main = document.querySelector('main');
 let menu = document.querySelector('#menu');
@@ -23,7 +23,6 @@ let textPostForm = document.querySelector('#text-post-form');
 textPostForm.addEventListener('submit', (e)=>{
 
     if(!textContent.style.display || textContent.style.display === 'none'){
-        console.log('Cancelled');
         e.preventDefault();
         return false;
     }
@@ -60,7 +59,7 @@ function get(url, callback){
 
 get(OWN_POSTS_URL,(j)=>{
     let blogPost;
-    for(let i = (j.length - 1); i >= 0; i--){
+    for(let i = j.length - 1; i >= 0; i--){
         blogPost = ownBlogPostTemplate.content.cloneNode(true);
         blogPost.querySelector('.blog-post__content').appendChild(blogPostTextContentTemplate.content.cloneNode(true));
         blogPost.querySelector('.blog-post__content__title').innerHTML = j[i].data.title;
